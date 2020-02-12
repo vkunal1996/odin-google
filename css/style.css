@@ -1,5 +1,5 @@
 body{
-    height: auto;
+    height: 100%;
     width: 100%;
 }
 .container{
@@ -141,4 +141,36 @@ a.navigation-links:visited{
 .search:hover , .lucky:hover{
     color:black;
     border-color: black;
+}
+.footer{
+    background-color: rgb(230, 230, 230);
+    margin-top:10%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
+.right-footer{
+    justify-content: flex-end;
+    width:50%;
+    display: flex;
+    flex-direction: row;
+    padding-right: 2%;
+}
+.left-footer{
+    padding-left:2%;
+    width:50%;
+    display: flex;
+    flex-direction: row;
+}
+.navigation-left-footer{
+    margin:0.8%;
+    margin-top:3%;
+    font-size: 80%;
+    padding-bottom:2%;
+}
+.navigation-right-footer{
+    margin:0.8%;
+    margin-top:3%;
+    padding-bottom:2%;
+    font-size: 80%;
 }
