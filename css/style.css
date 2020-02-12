@@ -1,0 +1,144 @@
+body{
+    height: auto;
+    width: 100%;
+}
+.container{
+    display: flex;
+    width:100%;
+    height:auto;
+    flex-direction: column;
+    position: relative;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.navigation-images{
+    width: 25px;
+    height: 25px;
+}
+.navigation-left{
+    margin:0.8%;
+    margin-top:5%;
+    font-size: 80%;
+}
+.navigation-right{
+    margin:0.8%;
+    margin-top:5%;
+    font-size: 80%;
+}
+.nvg-img{
+    margin-top:4%;
+}
+.nvg-img-dp{
+    margin-top:3.5%;
+}
+a.navigation-links{
+    color:rgb(49, 47, 47);
+    text-decoration:none;    
+    font-family: sans-serif;
+}
+a.navigation-links:visited{
+    color:rgb(49, 47, 47);
+    text-decoration:none;
+    font-family: sans-serif;
+
+}
+.right{
+    justify-content: flex-end;
+    width:50%;
+    display: flex;
+    flex-direction: row;
+    padding-right: 2%;
+}
+.left{
+    padding-left:2%;
+    width:50%;
+    display: flex;
+    flex-direction: row;
+}
+.dp{
+    background-color: darkgreen;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+
+}
+.google{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:1%;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    padding-top:6%;
+    width:20%;
+}
+#google{
+    width:100%;
+    margin-top: 6%;
+}
+.form{
+    width:50%;
+    display: flex;
+    flex-direction: row;
+    padding:1%;
+    margin-left:25%;
+    position: relative;
+}
+
+.searchbar{
+    border-radius: 50px;
+    border-color: gray solid;
+    position: relative;
+    width:100%;
+    height: 40px;
+    margin-top:4%;
+}
+
+.form i { 
+    position:absolute; 
+} 
+
+.icon { 
+    padding-left:2%;
+    margin-top:6%;
+    min-width: 40px; 
+    color:gray;
+} 
+.fa-microphone{
+    padding-left:90%;
+    color:blue;
+}
+.buttons{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    height:auto;
+}
+.searchbttn,.luckybttn{
+    padding:2%;
+    height:90%;
+    width:10%;
+    margin-top:0.5%;
+}
+.search, .lucky{
+    background-color: rgb(233, 233, 233);
+    border-color: rgb(233, 233, 233);
+    border-radius: 0%;
+    color:rgb(49, 47, 47);
+    font-family: Arial, Helvetica, sans-serif;
+    width:100%;
+    height:40px;
+    position: relative;
+    text-align: center;
+}
+
+.search:hover , .lucky:hover{
+    color:black;
+    border-color: black;
+}
