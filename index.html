@@ -6,11 +6,22 @@
             <link rel='stylesheet' type='text/css' href='css/style.css'>
             <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
             <script>
-              
+                function setCaretPosition(id){
+                    var el = document.getElementById(id) 
+                    el.focus()
+                    if (typeof el.selectionStart == "number") {
+                        el.selectionStart = el.selectionEnd = el.value.length;
+                    }
+                    else if (typeof el.createTextRange != "undefined") {           
+                         var range = el.createTextRange();
+                         range.collapse(false);
+                         range.select();
+                    }
+                }
             </script>
         </head>
         
-        <body onload="setCaretPosition()">
+        <body onload="setCaretPosition('search1')">
 
             <div class='container'>
                 <nav class='navigation'>
@@ -42,8 +53,10 @@
                 <div class='google'>
                     <img id="google"src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'>
                 </div>
+                <form action="result.html">
+                
                 <div class='form'>
-                    <input type='text' class='searchbar' id='search1' autofocus>
+                    <input type='text' class='searchbar' id='search1' value="         vkunal1996" onfocus="this.value = this.value;">
                     <i class="fa fa-search icon"></i> 
                     <i class="fa fa-microphone icon"></i> 
 
@@ -55,10 +68,12 @@
                     </div>
 
                     <div class='luckybttn'>
-                        <input type='submit' value="I'm feeling lucky" class='lucky'>
+                        <input type='submit' value="Find About me." class='lucky' formaction="result.html">
                     </div>
                     
                 </div>
+                
+                </form>
 
                 <div class='footer-div'>
 
